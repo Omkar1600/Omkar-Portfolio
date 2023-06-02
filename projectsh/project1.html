@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding-left: 100px;
+      padding-right: 100px;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .project-container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      
+      
+    }
+    
+    .project-image {
+      display: block;
+      width: 60%;
+      margin: auto;
+      border: 1px solid #5d5555;
+    }
+    
+    .project-content {
+      
+      margin-bottom: 20px;
+    }
+    
+    .project-link {
+      padding:0;
+    }
+
+    .project-container .project-link{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: fixed;
+      right: 0;
+      top: 40%;
+    }
+
+    .project-link .link:hover{
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    .project-content ul li{
+      text-align: justify;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="project-container">
+    <h1>US Education Funds Analysis</h1>
+    <img src="../images/pic00.png" alt="Project Image" class="project-image">
+    <div class="project-content">
+      <h2>Desciption</h2>
+      <p>The Dashboard tells about the US Government Spending on student education .The dashboard give the detail structure of the spending that the Government does on the basic of their state, city , college type. This dashboard is helpful for the students and the voters to underatand their state wise education spemding .</p>
+      <h2>Working</h2>
+      <p>The working of the projects goes from scrapping the data to creating an ETL pipeline to store the data into the RDBMS to cleaning and tranformin the data before loadind it into tableau for preparation of visualizations.</p>
+      <ul>
+        <li>Scrapping : The data was scrappeed from the offical site of us govenment . The data was available in various format that were csv and excel format.</li>
+        <li>ETL : The Data that was collected into Excel file was transformed as per the Dashboard requirments that adding the Date column re assining the values of institution type into structed format .</li>
+        <li>Dashboard: The Dashboard consists of map charts, kpis, Butterfly charts , bar charts,various filters and one hidden filter. Map Chart: This tells the total amount spend by the government state wise. Butterfly chart: Provides the list of all the colleges and the count of students and amount of award received from the government as per the filters selected. KPIS: Total amount of Awards , Count of students ,Number of cities, number of institution. Bar chart : Tells the instution type spending in the selected city and hidden filter to get the detail spending structure of the college. Filters : Year, State , City , Institution Type , College Name.</li>
+
+      </ul>
+      
+      
+    </div>
+    <div class="project-link">
+      <div class="link">
+        <a href="https://github.com/Omkar1600/US_Student_Dept_Analytics"><img src="../images/icons8-github-64.png" alt=""></a>
+      </div>
+      
+      <div class="link">
+        <a href="https://public.tableau.com/app/profile/omkar4768/viz/Education_16790659745500/Dashboard1"><img src="../images/icons8-tableau-software-48.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding-left: 100px;
+      padding-right: 100px;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .project-container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      
+      
+    }
+    
+    .project-image {
+      display: block;
+      width: 60%;
+      margin: auto;
+      border: 1px solid #5d5555;
+    }
+    
+    .project-content {
+      
+      margin-bottom: 20px;
+    }
+    
+    .project-link {
+      padding:0;
+    }
+
+    .project-container .project-link{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: fixed;
+      right: 0;
+      top: 40%;
+    }
+
+    .project-link .link:hover{
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    .project-content ul li{
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <div class="project-container">
+    <h1>Malaria Detection Using CNN</h1>
+    <img src="../images/pic04.png" alt="Project Image" class="project-image">
+    <div class="project-content">
+      <h2>Description</h2>
+      <p>The Malaria Detection project is an application of Convolutional Neural Networks (CNN) implemented using PyTorch to detect malaria in blood cell images. Malaria is a life-threatening disease caused by parasites transmitted through mosquito bites. Early and accurate detection of malaria is crucial for effective treatment and prevention of its spread.
+
+      </p>
+      <p>This project aims to leverage the power of deep learning and computer vision techniques to automate the detection of malaria-infected red blood cells in microscopic images. By training a CNN model on a large dataset of labeled blood cell images, the project aims to achieve high accuracy in distinguishing between infected and uninfected cells, thereby assisting medical professionals in making faster and more accurate diagnoses.
+
+      </p>
+      <p>The repository provides the necessary code and resources to build and train a CNN model for malaria detection. By utilizing the PyTorch deep learning framework, developers and researchers can easily understand and modify the provided code to adapt it to their specific requirements or enhance the model's performance.</p>
+      <h2>Project Higlights</h2>
+      <ul>
+        <li>Dataset: The project includes a dataset of blood cell images, where each image is labeled as infected or uninfected. The dataset has been carefully curated and preprocessed to ensure high quality and reliable training data</li>
+        <li>Convolutional Neural Networks (CNN): CNNs are a class of deep learning models well-suited for image recognition tasks. In this project, a CNN architecture is implemented using PyTorch, which provides an efficient and flexible framework for building neural networks.</li>
+        <li>Model Training: The repository includes code to train the CNN model using the provided dataset. The training process involves feeding the images into the network, optimizing the model's parameters, and iteratively improving its ability to classify infected and uninfected cells</li>
+        <li>Model Evaluation: Once the model is trained, the project provides code to evaluate its performance using a separate validation dataset. The evaluation metrics, such as accuracy, precision, recall, and F1 score, provide insights into the model's effectiveness in detecting malaria</li>
+        <li>Inference and Prediction: The trained model can be used to make predictions on new, unseen blood cell images. By inputting an image into the model, it can classify the image as infected or uninfected, aiding in the automated detection process.</li>
+
+      </ul>
+      
+
+      
+      
+    </div>
+    <div class="project-link">
+      <div class="link">
+        <a href="https://github.com/Omkar1600/Malaria-Detection-cnn-"><img src="../images/icons8-github-64.png" alt=""></a>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
